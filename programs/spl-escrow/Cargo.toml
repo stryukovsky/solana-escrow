@@ -1,0 +1,21 @@
+[package]
+name = "spl-escrow"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "spl_escrow"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-spl = "0.27.0"
+anchor-lang = "0.27.0"
+winnow = "=0.4.1"
